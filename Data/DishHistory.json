@@ -1,0 +1,84 @@
+[
+  {
+    "Item1": "2025-01-20T05:35:16.9069903+01:00",
+    "Item2": {
+      "Name": "Tomato soup",
+      "Ingredients": [
+        {
+          "Description": "Tomatoes, canned, red, ripe, diced",
+          "Nutrients": {
+            "Energy (kcal)": 18.0,
+            "Carbohydrate, by difference (g)": 3.32,
+            "Total lipid (fat) (g)": 0.5,
+            "Protein (g)": 0.84,
+            "Sodium, Na (mg)": 125.0,
+            "Fiber, total dietary (g)": 0.0
+          },
+          "QuantityInGrams": 200.0,
+          "Category": "Vegetables and Fruits"
+        },
+        {
+          "Description": "Cream, sour, full fat",
+          "Nutrients": {
+            "Energy (kcal)": 196.52,
+            "Carbohydrate, by difference (g)": 5.56,
+            "Total lipid (fat) (g)": 18.0,
+            "Protein (g)": 3.07,
+            "Sodium, Na (mg)": 50.0,
+            "Fiber, total dietary (g)": 0.0
+          },
+          "QuantityInGrams": 40.0,
+          "Category": "Dairy and eggs"
+        },
+        {
+          "Description": "Salt, table, iodized",
+          "Nutrients": {
+            "Energy (kcal)": 0.0,
+            "Carbohydrate, by difference (g)": 0.0,
+            "Total lipid (fat) (g)": 0.0,
+            "Protein (g)": 0.0,
+            "Sodium, Na (mg)": 38700.0,
+            "Fiber, total dietary (g)": 0.0
+          },
+          "QuantityInGrams": 5.0,
+          "Category": "Other"
+        },
+        {
+          "Description": "Carrots, mature, raw",
+          "Nutrients": {
+            "Energy (kcal)": 48.12,
+            "Carbohydrate, by difference (g)": 10.3,
+            "Total lipid (fat) (g)": 0.351,
+            "Protein (g)": 0.941,
+            "Sodium, Na (mg)": 86.6,
+            "Fiber, total dietary (g)": 3.1
+          },
+          "QuantityInGrams": 50.0,
+          "Category": "Vegetables and Fruits"
+        },
+        {
+          "Description": "Onions, white, raw",
+          "Nutrients": {
+            "Energy (kcal)": 35.0,
+            "Carbohydrate, by difference (g)": 7.68,
+            "Total lipid (fat) (g)": 0.13,
+            "Protein (g)": 0.89,
+            "Sodium, Na (mg)": 2.0,
+            "Fiber, total dietary (g)": 1.2
+          },
+          "QuantityInGrams": 20.0,
+          "Category": "Vegetables and Fruits"
+        }
+      ],
+      "TotalNutrients": {
+        "Energy (kcal)": 145.668,
+        "Carbohydrate, by difference (g)": 15.549999999999999,
+        "Total lipid (fat) (g)": 8.401499999999999,
+        "Protein (g)": 3.5564999999999998,
+        "Sodium, Na (mg)": 2248.7000000000003,
+        "Fiber, total dietary (g)": 1.79
+      },
+      "Date": "2025-01-20T05:32:17.7567349+01:00"
+    }
+  }
+]

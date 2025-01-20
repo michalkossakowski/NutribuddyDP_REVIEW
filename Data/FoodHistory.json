@@ -1,0 +1,18 @@
+[
+  {
+    "Item1": "2025-01-20T05:14:12.1773913+01:00",
+    "Item2": {
+      "Description": "Onion rings, breaded, par fried, frozen, prepared, heated in oven",
+      "Nutrients": {
+        "Energy (kcal)": 288.0,
+        "Carbohydrate, by difference (g)": 36.3,
+        "Total lipid (fat) (g)": 14.4,
+        "Protein (g)": 4.52,
+        "Sodium, Na (mg)": 374.0,
+        "Fiber, total dietary (g)": 2.4
+      },
+      "QuantityInGrams": 80.0,
+      "Category": "Bread"
+    }
+  }
+]

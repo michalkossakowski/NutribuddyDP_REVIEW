@@ -1,0 +1,440 @@
+[
+  {
+    "$type": "NutribuddyDP.Core.Models.Day, NutribuddyDP",
+    "Meals": [
+      {
+        "$type": "NutribuddyDP.Core.Models.Meal, NutribuddyDP",
+        "FoodItems": [
+          {
+            "Description": "Orange juice, no pulp, not fortified, not from concentrate, refrigerated",
+            "Nutrients": {
+              "Energy (kcal)": 46.45,
+              "Carbohydrate, by difference (g)": 10.0,
+              "Total lipid (fat) (g)": 0.356,
+              "Protein (g)": 0.812,
+              "Sodium, Na (mg)": 0.075,
+              "Fiber, total dietary (g)": 0.0
+            },
+            "QuantityInGrams": 200.0,
+            "Category": "Beverages"
+          }
+        ],
+        "Dishes": [
+          {
+            "Name": "Logger's salad",
+            "Ingredients": [
+              {
+                "Description": "Chicken, breast, boneless, skinless, raw",
+                "Nutrients": {
+                  "Energy (kcal)": 107.37,
+                  "Carbohydrate, by difference (g)": 0.0,
+                  "Total lipid (fat) (g)": 1.93,
+                  "Protein (g)": 22.5,
+                  "Sodium, Na (mg)": 65.8,
+                  "Fiber, total dietary (g)": 0.0
+                },
+                "QuantityInGrams": 100.0,
+                "Category": "Meat and fish"
+              },
+              {
+                "Description": "Lettuce, romaine, green, raw",
+                "Nutrients": {
+                  "Energy (kcal)": 20.79,
+                  "Carbohydrate, by difference (g)": 4.06,
+                  "Total lipid (fat) (g)": 0.071,
+                  "Protein (g)": 0.977,
+                  "Sodium, Na (mg)": 23.0,
+                  "Fiber, total dietary (g)": 0.0
+                },
+                "QuantityInGrams": 50.0,
+                "Category": "Vegetables and Fruits"
+              },
+              {
+                "Description": "Pork, cured, bacon, cooked, restaurant",
+                "Nutrients": {
+                  "Energy (kcal)": 500.0,
+                  "Carbohydrate, by difference (g)": 2.1,
+                  "Total lipid (fat) (g)": 36.5,
+                  "Protein (g)": 40.9,
+                  "Sodium, Na (mg)": 1830.0,
+                  "Fiber, total dietary (g)": 0.0
+                },
+                "QuantityInGrams": 30.0,
+                "Category": "Meat and fish"
+              },
+              {
+                "Description": "Tomatoes, grape, raw",
+                "Nutrients": {
+                  "Energy (kcal)": 27.0,
+                  "Carbohydrate, by difference (g)": 5.51,
+                  "Total lipid (fat) (g)": 0.63,
+                  "Protein (g)": 0.83,
+                  "Sodium, Na (mg)": 6.0,
+                  "Fiber, total dietary (g)": 2.1
+                },
+                "QuantityInGrams": 25.0,
+                "Category": "Vegetables and Fruits"
+              },
+              {
+                "Description": "Cheese, cheddar",
+                "Nutrients": {
+                  "Energy (kcal)": 408.0,
+                  "Carbohydrate, by difference (g)": 2.44,
+                  "Total lipid (fat) (g)": 34.0,
+                  "Protein (g)": 23.3,
+                  "Sodium, Na (mg)": 654.0,
+                  "Fiber, total dietary (g)": 0.0
+                },
+                "QuantityInGrams": 20.0,
+                "Category": "Dairy and eggs"
+              },
+              {
+                "Description": "Pickles, cucumber, dill or kosher dill",
+                "Nutrients": {
+                  "Energy (kcal)": 12.0,
+                  "Carbohydrate, by difference (g)": 1.99,
+                  "Total lipid (fat) (g)": 0.43,
+                  "Protein (g)": 0.48,
+                  "Sodium, Na (mg)": 808.0,
+                  "Fiber, total dietary (g)": 1.0
+                },
+                "QuantityInGrams": 25.0,
+                "Category": "Other"
+              },
+              {
+                "Description": "Oil, olive, extra light",
+                "Nutrients": {
+                  "Energy (kcal)": 0.0,
+                  "Carbohydrate, by difference (g)": 0.0,
+                  "Total lipid (fat) (g)": 0.0,
+                  "Protein (g)": 0.0,
+                  "Sodium, Na (mg)": 0.0,
+                  "Fiber, total dietary (g)": 0.0
+                },
+                "QuantityInGrams": 1.0,
+                "Category": "Other"
+              }
+            ],
+            "TotalNutrients": {
+              "Energy (kcal)": 359.115,
+              "Carbohydrate, by difference (g)": 5.022999999999999,
+              "Total lipid (fat) (g)": 19.980500000000003,
+              "Protein (g)": 40.246,
+              "Sodium, Na (mg)": 960.5999999999999,
+              "Fiber, total dietary (g)": 0.775
+            },
+            "Date": "2025-01-20T09:29:52.2615434+01:00"
+          }
+        ],
+        "Name": "Śniadanie"
+      },
+      {
+        "$type": "NutribuddyDP.Core.Models.Meal, NutribuddyDP",
+        "FoodItems": [
+          {
+            "Description": "Water, carbonated",
+            "Nutrients": {
+              "Energy (kcal)": 0.0,
+              "Carbohydrate, by difference (g)": 0.0,
+              "Total lipid (fat) (g)": 0.0,
+              "Protein (g)": 0.0,
+              "Sodium, Na (mg)": 2.0,
+              "Fiber, total dietary (g)": 0.0
+            },
+            "QuantityInGrams": 200.0,
+            "Category": "Beverages"
+          }
+        ],
+        "Dishes": [
+          {
+            "Name": "Hash browns",
+            "Ingredients": [
+              {
+                "Description": "Eggs, Grade A, Large, egg whole",
+                "Nutrients": {
+                  "Energy (kcal)": 148.0,
+                  "Carbohydrate, by difference (g)": 0.96,
+                  "Total lipid (fat) (g)": 9.96,
+                  "Protein (g)": 12.4,
+                  "Sodium, Na (mg)": 129.0,
+                  "Fiber, total dietary (g)": 0.0
+                },
+                "QuantityInGrams": 50.0,
+                "Category": "Dairy and eggs"
+              },
+              {
+                "Description": "Flour, wheat, all-purpose, enriched, bleached",
+                "Nutrients": {
+                  "Energy (kcal)": 366.0,
+                  "Carbohydrate, by difference (g)": 77.3,
+                  "Total lipid (fat) (g)": 1.48,
+                  "Protein (g)": 10.9,
+                  "Sodium, Na (mg)": 2.0,
+                  "Fiber, total dietary (g)": 0.0
+                },
+                "QuantityInGrams": 30.0,
+                "Category": "Other"
+              },
+              {
+                "Description": "Onions, white, raw",
+                "Nutrients": {
+                  "Energy (kcal)": 35.0,
+                  "Carbohydrate, by difference (g)": 7.68,
+                  "Total lipid (fat) (g)": 0.13,
+                  "Protein (g)": 0.89,
+                  "Sodium, Na (mg)": 2.0,
+                  "Fiber, total dietary (g)": 1.2
+                },
+                "QuantityInGrams": 50.0,
+                "Category": "Vegetables and Fruits"
+              },
+              {
+                "Description": "Potatoes, russet, without skin, raw",
+                "Nutrients": {
+                  "Energy (kcal)": 83.52,
+                  "Carbohydrate, by difference (g)": 17.8,
+                  "Total lipid (fat) (g)": 0.36,
+                  "Protein (g)": 2.27,
+                  "Sodium, Na (mg)": 2.74,
+                  "Fiber, total dietary (g)": 0.0
+                },
+                "QuantityInGrams": 200.0,
+                "Category": "Vegetables and Fruits"
+              }
+            ],
+            "TotalNutrients": {
+              "Energy (kcal)": 368.34000000000003,
+              "Carbohydrate, by difference (g)": 63.11,
+              "Total lipid (fat) (g)": 6.2090000000000005,
+              "Protein (g)": 14.455000000000002,
+              "Sodium, Na (mg)": 71.58,
+              "Fiber, total dietary (g)": 0.6
+            },
+            "Date": "2025-01-20T09:43:45.6737725+01:00"
+          }
+        ],
+        "Name": "Obiad"
+      },
+      {
+        "$type": "NutribuddyDP.Core.Models.Meal, NutribuddyDP",
+        "FoodItems": [
+          {
+            "Description": "Milk, whole, 3.25% milkfat, with added vitamin D",
+            "Nutrients": {
+              "Energy (kcal)": 60.0,
+              "Carbohydrate, by difference (g)": 4.63,
+              "Total lipid (fat) (g)": 3.2,
+              "Protein (g)": 3.27,
+              "Sodium, Na (mg)": 38.0,
+              "Fiber, total dietary (g)": 0.0
+            },
+            "QuantityInGrams": 100.0,
+            "Category": "Dairy and eggs"
+          }
+        ],
+        "Dishes": [
+          {
+            "Name": "Chocolate cupcakes",
+            "Ingredients": [
+              {
+                "Description": "Flour, wheat, all-purpose, enriched, bleached",
+                "Nutrients": {
+                  "Energy (kcal)": 366.0,
+                  "Carbohydrate, by difference (g)": 77.3,
+                  "Total lipid (fat) (g)": 1.48,
+                  "Protein (g)": 10.9,
+                  "Sodium, Na (mg)": 2.0,
+                  "Fiber, total dietary (g)": 0.0
+                },
+                "QuantityInGrams": 320.0,
+                "Category": "Other"
+              },
+              {
+                "Description": "Egg, whole, raw, frozen, pasteurized",
+                "Nutrients": {
+                  "Energy (kcal)": 150.0,
+                  "Carbohydrate, by difference (g)": 0.91,
+                  "Total lipid (fat) (g)": 10.3,
+                  "Protein (g)": 12.3,
+                  "Sodium, Na (mg)": 121.0,
+                  "Fiber, total dietary (g)": 0.0
+                },
+                "QuantityInGrams": 120.0,
+                "Category": "Other"
+              },
+              {
+                "Description": "Oil, canola",
+                "Nutrients": {
+                  "Energy (kcal)": 0.0,
+                  "Carbohydrate, by difference (g)": 0.0,
+                  "Total lipid (fat) (g)": 0.0,
+                  "Protein (g)": 0.0,
+                  "Sodium, Na (mg)": 0.0,
+                  "Fiber, total dietary (g)": 0.0
+                },
+                "QuantityInGrams": 100.0,
+                "Category": "Other"
+              },
+              {
+                "Description": "Sugars, granulated",
+                "Nutrients": {
+                  "Energy (kcal)": 385.0,
+                  "Carbohydrate, by difference (g)": 99.6,
+                  "Total lipid (fat) (g)": 0.32,
+                  "Protein (g)": 0.0,
+                  "Sodium, Na (mg)": 1.0,
+                  "Fiber, total dietary (g)": 0.0
+                },
+                "QuantityInGrams": 130.0,
+                "Category": "Other"
+              },
+              {
+                "Description": "Milk, whole, 3.25% milkfat, with added vitamin D",
+                "Nutrients": {
+                  "Energy (kcal)": 60.0,
+                  "Carbohydrate, by difference (g)": 4.63,
+                  "Total lipid (fat) (g)": 3.2,
+                  "Protein (g)": 3.27,
+                  "Sodium, Na (mg)": 38.0,
+                  "Fiber, total dietary (g)": 0.0
+                },
+                "QuantityInGrams": 300.0,
+                "Category": "Dairy and eggs"
+              }
+            ],
+            "TotalNutrients": {
+              "Energy (kcal)": 2031.7,
+              "Carbohydrate, by difference (g)": 391.822,
+              "Total lipid (fat) (g)": 27.112000000000002,
+              "Protein (g)": 59.45,
+              "Sodium, Na (mg)": 266.9,
+              "Fiber, total dietary (g)": 0.0
+            },
+            "Date": "2025-01-20T09:28:24.6346016+01:00"
+          }
+        ],
+        "Name": "Deser"
+      },
+      {
+        "$type": "NutribuddyDP.Core.Models.Meal, NutribuddyDP",
+        "FoodItems": [],
+        "Dishes": [
+          {
+            "Name": "Oatmeal with fruit",
+            "Ingredients": [
+              {
+                "Description": "Flour, oat, whole grain",
+                "Nutrients": {
+                  "Energy (kcal)": 389.19,
+                  "Carbohydrate, by difference (g)": 69.9,
+                  "Total lipid (fat) (g)": 6.31,
+                  "Protein (g)": 13.2,
+                  "Sodium, Na (mg)": 3.62,
+                  "Fiber, total dietary (g)": 10.5
+                },
+                "QuantityInGrams": 50.0,
+                "Category": "Other"
+              },
+              {
+                "Description": "Milk, lowfat, fluid, 1% milkfat, with added vitamin A and vitamin D",
+                "Nutrients": {
+                  "Energy (kcal)": 43.0,
+                  "Carbohydrate, by difference (g)": 5.18,
+                  "Total lipid (fat) (g)": 0.95,
+                  "Protein (g)": 3.38,
+                  "Sodium, Na (mg)": 39.0,
+                  "Fiber, total dietary (g)": 0.0
+                },
+                "QuantityInGrams": 200.0,
+                "Category": "Dairy and eggs"
+              },
+              {
+                "Description": "Apples, red delicious, with skin, raw",
+                "Nutrients": {
+                  "Energy (kcal)": 61.86,
+                  "Carbohydrate, by difference (g)": 14.8,
+                  "Total lipid (fat) (g)": 0.212,
+                  "Protein (g)": 0.188,
+                  "Sodium, Na (mg)": 0.0,
+                  "Fiber, total dietary (g)": 2.04
+                },
+                "QuantityInGrams": 50.0,
+                "Category": "Vegetables and Fruits"
+              },
+              {
+                "Description": "Nuts, almonds, dry roasted, with salt added",
+                "Nutrients": {
+                  "Energy (kcal)": 620.0,
+                  "Carbohydrate, by difference (g)": 16.2,
+                  "Total lipid (fat) (g)": 57.8,
+                  "Protein (g)": 20.4,
+                  "Sodium, Na (mg)": 256.0,
+                  "Fiber, total dietary (g)": 11.0
+                },
+                "QuantityInGrams": 10.0,
+                "Category": "Other"
+              }
+            ],
+            "TotalNutrients": {
+              "Energy (kcal)": 373.52500000000003,
+              "Carbohydrate, by difference (g)": 54.33,
+              "Total lipid (fat) (g)": 10.940999999999999,
+              "Protein (g)": 15.494,
+              "Sodium, Na (mg)": 105.41,
+              "Fiber, total dietary (g)": 7.369999999999999
+            },
+            "Date": "2025-01-20T09:40:29.884888+01:00"
+          }
+        ],
+        "Name": "Kolacja"
+      }
+    ],
+    "Name": "Sobota"
+  },
+  {
+    "$type": "NutribuddyDP.Core.Models.Meal, NutribuddyDP",
+    "FoodItems": [
+      {
+        "Description": "Onion rings, breaded, par fried, frozen, prepared, heated in oven",
+        "Nutrients": {
+          "Energy (kcal)": 288.0,
+          "Carbohydrate, by difference (g)": 36.3,
+          "Total lipid (fat) (g)": 14.4,
+          "Protein (g)": 4.52,
+          "Sodium, Na (mg)": 374.0,
+          "Fiber, total dietary (g)": 2.4
+        },
+        "QuantityInGrams": 100.0,
+        "Category": "Other"
+      },
+      {
+        "Description": "Nuts, pistachio nuts, raw",
+        "Nutrients": {
+          "Energy (kcal)": 597.8,
+          "Carbohydrate, by difference (g)": 27.7,
+          "Total lipid (fat) (g)": 45.0,
+          "Protein (g)": 20.5,
+          "Sodium, Na (mg)": 0.0,
+          "Fiber, total dietary (g)": 6.97
+        },
+        "QuantityInGrams": 30.0,
+        "Category": "Other"
+      },
+      {
+        "Description": "Wine, red",
+        "Nutrients": {
+          "Energy (kcal)": 85.0,
+          "Carbohydrate, by difference (g)": 2.61,
+          "Total lipid (fat) (g)": 0.0,
+          "Protein (g)": 0.07,
+          "Sodium, Na (mg)": 4.0,
+          "Fiber, total dietary (g)": 0.0
+        },
+        "QuantityInGrams": 100.0,
+        "Category": "Beverages"
+      }
+    ],
+    "Dishes": [],
+    "Name": "Przekąska"
+  }
+]
