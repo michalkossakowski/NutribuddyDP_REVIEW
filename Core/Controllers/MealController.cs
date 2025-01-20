@@ -9,6 +9,7 @@ namespace NutribuddyDP.Core.Controllers
 {
     internal class MealController()
     {
+        // REVIEW - Dobrą praktyką jest inicjowane listy w kontruktorze, ułatwia to testowanie i zapobiega błędom związanych z niezainicjowanymi listami.
         private readonly List<IMealComponent>? _plannedMeals = DataStorageFacade.GetInstance().ImportPlannedMeals();
 
         public List<IMealComponent>? GetPlannedMeals()

@@ -29,7 +29,7 @@ namespace NutribuddyDP.UI.Console
                 new SelectionPrompt<string>()
                     .Title("What is your goal?")
                     .AddChoices("Lose Weight", "Maintain Weight", "Gain Weight"));
-
+            // REVIEW - Walidacja powinna odbywać się również na szczeblu wizualnym. Aktualnie odbywa się ona tylko w kontrolerze i niepoprawne zmiany (np ujemne wartości) nie zostaną zatwierdzone, ale użytkownik nie jet na bieżąco powiadamiany o wprowadzeniu błędu w widoku.
             _userController.UpdateUser(weight, height, age, gender, activityLevel, goal);
 
             AnsiConsole.MarkupLine("[bold green]User information updated successfully![/]");
