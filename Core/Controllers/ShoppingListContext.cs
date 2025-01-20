@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace NutribuddyDP.Core.Controllers
 {
+    // <REVIEW> Zamiast przyjmowania kontrollera można dodać dodatkową warstwę abstrakcji np serwisów
     internal class ShoppingListContext(MealController mealController)
     {
         private IShoppingListStrategy? _strategy;
