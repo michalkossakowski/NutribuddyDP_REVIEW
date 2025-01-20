@@ -3,7 +3,7 @@ using Spectre.Console;
 
 namespace NutribuddyDP.Core.Controllers
 {
-    ///<REVIEW> OK 
+    // <REVIEW> kontroller jest poprawnie zaimplementowany i rozdziela odpowiednią widok od controllera
     internal class EatHistoryController
     {
         public EatHistory EatHistory { get; private set; }
