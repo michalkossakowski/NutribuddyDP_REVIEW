@@ -3,6 +3,7 @@ using Spectre.Console;
 
 namespace NutribuddyDP.Core.Controllers
 {
+    ///<REVIEW> OK 
     internal class EatHistoryController
     {
         public EatHistory EatHistory { get; private set; }
