@@ -1,12 +1,15 @@
 ﻿using Newtonsoft.Json;
 using NutribuddyDP.Core.Interfaces;
 using NutribuddyDP.Core.Models;
-using System.Text.Json;
+using System.Text.Json; // REVIEW - nieużytu using
 
 namespace NutribuddyDP.Core.Controllers
 {
     internal class DataStorageFacade()
     {
+        // REVIEW - nie powinno się trzymać takich rzeczy jak wszelakie niezmienne
+        // ścieżki, klucze, urle powinny one być zadeklarowane np. w appsettings.json
+        // lub przy pomocy "Manage User Secrets" a nie jako zmienne w klasie
         private readonly string _filePathDish = "C:\\Users\\Administrator\\Source\\Repos\\NutribuddyDP\\Data\\DishData.json";
         private readonly string _filePathFoodItems = "C:\\Users\\Administrator\\Source\\Repos\\NutribuddyDP\\Data\\FoodData.json";
         private readonly string _filePathDishHistory = "C:\\Users\\Administrator\\Source\\Repos\\NutribuddyDP\\Data\\DishHistory.json";
@@ -63,6 +66,7 @@ namespace NutribuddyDP.Core.Controllers
 
         public void ExportPlannedMeals(List<IMealComponent> plannedMeals)
         {
+            // REVIEW - powielenie settings tutaj i w ImportPlannedMeals()
             var settings = new JsonSerializerSettings
             {
                 TypeNameHandling = TypeNameHandling.Auto,
@@ -93,12 +97,15 @@ namespace NutribuddyDP.Core.Controllers
 
         public User ImportUser()
         {
+            // REVIEW - Lista typu user która na sztywno używa tylko jednego usera x[0]
+            // można by to zastąpić metodą która importuje date bez używania listy
             List<User>? x = DataStorage.ImportData<User>(_filePathUserData);
             return (x.Count == 0) ? new User() : x[0];
         }
 
         public List<IMealComponent>? ImportPlannedMeals()
         {
+            // REVIEW - powielenie settings tutaj i w ExportPlannedMeals()
             var settings = new JsonSerializerSettings
             {
                 TypeNameHandling = TypeNameHandling.Auto,

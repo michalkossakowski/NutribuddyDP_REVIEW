@@ -5,6 +5,8 @@ namespace NutribuddyDP.Core.Controllers
 {
     internal class DataStorage
     {
+        // REVIEW - konstruktor nigdy nie użyty więc niepotrzebny
+        // klasa ma same metody statyczne więc nie tworzy się jej instancja
         public DataStorage() { }
 
         public static void ExportData<T>(List<T> data, string filePath, JsonSerializerSettings? jsonSerializerSettings = null)
@@ -16,8 +18,10 @@ namespace NutribuddyDP.Core.Controllers
                 var jsonData = JsonConvert.SerializeObject(data, Formatting.Indented, jsonSerializerSettings);
                 File.WriteAllText(filePath, jsonData);
             }
-            catch (Exception ex)
+            catch (Exception ex) // REVIEW - powinien być łapany konkretny wyjątek a nie Exception
             {
+                // REVIEW - przy wzorcu MVC nie MOŻNA użależniać kontrolera od widoku
+                // wypisywanie danych w konsoli powinno odbywać się jedynie w View
                 AnsiConsole.WriteLine($"Error saving file: {ex.Message}");
             }
 
@@ -31,8 +35,9 @@ namespace NutribuddyDP.Core.Controllers
                 var jsonData = File.Exists(filePath) ? File.ReadAllText(filePath) : "[]";
                 data = JsonConvert.DeserializeObject<List<T>>(jsonData, jsonSerializerSettings)!;
             }
-            catch (Exception ex)
+            catch (Exception ex) // REVIEW - powinno się łapać konkretny exception
             {
+                // REVIEW - ponownie wypisanie w konsoli z poziomu kontrolera jest surowo ZABRONIONE
                 AnsiConsole.WriteLine($"Error loading file: {ex.Message}");
                 data = [];
             }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+// REVIEW - dużo nieużytych usingów
 
 namespace NutribuddyDP.Core.Interfaces
 {
