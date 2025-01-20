@@ -387,7 +387,8 @@ namespace NutribuddyDP.UI.Console
                 .AddChoices(dishes.Select(d => d.Name))
                 .HighlightStyle(new Style(foreground: Color.MediumPurple))
             );
-
+            //<REVIEW> - MVC wymaga wyraźnego rozdzielenia odpowiedzialności między warstwami.
+            //Widok przekazuje funkcję anonimową do kontrolera, co może naruszać tę zasadę
             _dishController.EditDish(dishName, dish =>
             {
                 AnsiConsole.MarkupLine($"Editing dish: [bold gold1]{dish.Name}[/]");
