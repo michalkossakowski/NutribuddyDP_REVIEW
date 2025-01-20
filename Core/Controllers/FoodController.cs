@@ -2,6 +2,7 @@
 
 namespace NutribuddyDP.Core.Controllers
 {
+    // REVIEW - gitem jest B)
     internal class FoodController
     {
         private readonly List<FoodItem>? _foodItems;

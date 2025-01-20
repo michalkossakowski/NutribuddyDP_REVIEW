@@ -12,7 +12,7 @@ namespace NutribuddyDP.Core.Controllers
     {
         public CategoryStrategy() { }
 
-
+        // REVIEW - Wartość w słowniku dicst jest typu object ze względu na ogólność, ale w praktyce zawsze będzie rzutowana na List<FoodItem> zatem nie ma sensu. Jak już chcemy, aby potencjalnie dodawać dodatkowe grupy to lepiej stworzyć klasę/interface, którego obiekty będziemy trzymać zamiast object.
         public Dictionary<string, object> GenerateShoppingList(Dictionary<string, FoodItem> items)
         {
             var dicst = new Dictionary<string, object>();
