@@ -38,6 +38,8 @@ namespace NutribuddyDP.Core.Controllers
             return totalNutrients;
         }
 
+        // <Review> - Controller nie powinnień odpowiadać za wypisywanie do konsoli,
+        // lepiej zwracać string lub bool jeżeli chcemy poinformować o błędzie wykonywania lub pustej tablicy
         public static void SetIngredientQuantity(Dish dish, string foodDescription, double quantityInGrams)
         {
             var ingredient = dish.Ingredients.FirstOrDefault(f => f.Description == foodDescription);
@@ -59,6 +61,10 @@ namespace NutribuddyDP.Core.Controllers
             SaveDishes();
         }
 
+
+
+        // <Review> - Controller nie powinnień odpowiadać za wypisywanie do konsoli,
+        // lepiej zwracać string lub bool jeżeli chcemy poinformować o błędzie wykonywania lub pustej tablicy
         public void EditDish(string dishName, Action<Dish> editAction)
         {
             var dish = _dishes!.FirstOrDefault(d => d.Name.Equals(dishName, StringComparison.OrdinalIgnoreCase));
@@ -74,6 +80,9 @@ namespace NutribuddyDP.Core.Controllers
             }
         }
 
+
+        // <Review> - Controller nie powinnień odpowiadać za wypisywanie do konsoli,
+        // lepiej zwracać string lub bool jeżeli chcemy poinformować o błędzie wykonywania lub pustej tablicy
         public void DeleteDish(string dishName)
         {
             var dish = _dishes!.FirstOrDefault(d => d.Name.Equals(dishName, StringComparison.OrdinalIgnoreCase));
