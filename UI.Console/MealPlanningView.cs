@@ -2,7 +2,12 @@
 using NutribuddyDP.Core.Interfaces;
 using NutribuddyDP.Core.Models;
 using Spectre.Console;
+//<REVIEW> Często się powtarza poniższy kod
+//    AnsiConsole.Clear();
+//    AnsiConsole.Write(planningFigletText);
+//    można byłoby go wydzielić do osobnej metody
 
+//<REVIEW> Nie które metody wydają się długie i mogłyby być podzielone na mniejsze metody w celu zwiększenia czytelności
 namespace NutribuddyDP.UI.Console
 {
     internal class MealPlanningView(MealController mealController, DishController dishController, FoodController foodController, ViewManager viewManager) : IView
@@ -74,6 +79,7 @@ namespace NutribuddyDP.UI.Console
                         AnsiConsole.Write(planningFigletText);
                         break;
                     case "Return to main menu":
+                        // REVIEW - nigdy nie dochodzi do return podobnie jak w wielu innych miejscach
                         _viewManager.ShowView("MainMenu");
                         return;
                 }

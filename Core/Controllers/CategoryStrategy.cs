@@ -8,6 +8,12 @@ using System.Threading.Tasks;
 
 namespace NutribuddyDP.Core.Controllers
 {
+    //<REVIEW> + Prawidłowo zastosowano wzorzec strategy.
+    // + Dzięki zastosowaniu interfejsu łatwo dodawać nowe strategie.
+    // + Strategie mogą być zmieniane dynamicznie patrz(ShoppingListView).
+    // + Kod jest reużywalny.
+    // - Było by fajnie jakby podzielić odpowiednio na foldery i nazwać je zgodnie z konwencją a nie wszystko wrzucać do Controllers.
+    // - Zwiększono liczbe klas zaś sam kod nie wydaję się być zbyt skomplikowany, aby usprawiedliwiać takie coś.
     internal class CategoryStrategy: IShoppingListStrategy
     {
         public CategoryStrategy() { }

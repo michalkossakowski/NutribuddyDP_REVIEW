@@ -2,7 +2,9 @@
 
 namespace NutribuddyDP.Core.Controllers
 {
-    // REVIEW - dziwne dość rzecz, nasz user controller nie pozwala nam na dodanie nowego usera. Z marszu wraz z uruchomieniem kodu mamy dodanego jednego losowego użytkownika i dostosowanie tego pod nas odbywa się na edycji istniejących danych. Zbytnio się tak raczej nie robi.
+    // REVIEW - dziwne dość rzecz, nasz user controller nie pozwala nam na dodanie
+    // nowego usera. Z marszu wraz z uruchomieniem kodu mamy dodanego jednego losowego użytkownika
+    // i dostosowanie tego pod nas odbywa się na edycji istniejących danych. Zbytnio się tak raczej nie robi.
     internal class UserController
     {
         private readonly User _user;
@@ -21,7 +23,10 @@ namespace NutribuddyDP.Core.Controllers
             if (height > 0) _user.Height = height;
             if (age > 0) _user.Age = age;
             if (gender == "Male" || gender == "Female") _user.Gender = gender;
-            // REVIEW - Nie ma walidacji pozostałych rzeczy. W naszym przypadku owszem, nasz view nie pozwala na wprowadzenie złych danych, ale w przyszłości może się to zmienić i warto byłoby dodać walidację na poziomie kontrolera. Dla gender mającego analogiczną sytuację taka walidacja została dodana
+            // REVIEW - Nie ma walidacji pozostałych rzeczy. W naszym przypadku owszem,
+            // nasz view nie pozwala na wprowadzenie złych danych, ale w przyszłości może się to zmienić i
+            // warto byłoby dodać walidację na poziomie kontrolera. Dla gender mającego analogiczną sytuację taka
+            // walidacja została dodana
             _user.PhysicalActivityLevel = physicalActivityLevel;
             _user.Goal = goal;
             _user.BMI = CalculateBMI();

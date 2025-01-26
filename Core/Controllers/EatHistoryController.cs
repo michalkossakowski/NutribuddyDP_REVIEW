@@ -56,6 +56,8 @@ namespace NutribuddyDP.Core.Controllers
             return totalNutrients;
         }
 
+        // <REVIEW> Podana metoda jest zależna od biblioteki Spectre.Console co jest złym pomysłem w kontekście wzorca MVC.
+        // Jeżeli chcemy zachować zgodność z wzorcem MVC to metoda powinna zwracać dane a nie generować widok.
         public void BuildCalendar(Calendar calendar, int year, int month)
         {
             var tempMonth = month;

@@ -21,6 +21,8 @@ namespace NutribuddyDP.UI.Console
             AnsiConsole.Write(foodFigletText);
             while (true)
             {
+
+                // <REVIEW> - Można by było przenieść nad pętlą while, zwłaszcza że jest to stała wartość
                 var options = new List<string>
                 {
                     "View all food items",
@@ -51,6 +53,7 @@ namespace NutribuddyDP.UI.Console
 
                     case "Return to main menu":
                         //_navigateToMainMenu();
+                        // REVIEW - nigdy nie dochodzi do return podobnie jak w wielu innych miejscach
                         _viewManager.ShowView("MainMenu");
                         return;
                 }

@@ -94,6 +94,7 @@ namespace NutribuddyDP.UI.Console
                 case "Return to main menu":
                     //_navigateToMainMenu();
                     _viewManager.ShowView("MainMenu");
+                    // REVIEW - nigdy nie dochodzi do break podobnie jak w wielu innych miejscach
                     break;
             }
         }
@@ -106,6 +107,7 @@ namespace NutribuddyDP.UI.Console
             var todayNutrients = _eatHistoryController.GetTotalNutrientsFromDay(DateTime.Now);
             var godDid = todayNutrients.TryGetValue("Energy (kcal)", out var calories);
             Align kcalGuardPanel;
+            //<REVIEW>Można takie wartości jak 1.2 i 0.8 wyciągnąć do stałych
             if (godDid)
             {
                 Markup centeredText;
@@ -185,7 +187,7 @@ namespace NutribuddyDP.UI.Console
             {
                 return;
             }
-
+            // <REVIEW> Nie które (lepiej wszystkie ) z stych wartości można by wyciągnąć do stałych, np. "Energy (kcal)"
             string[] nutrients = [
                 "Energy (kcal)",
                 "Carbohydrate, by difference (g)",

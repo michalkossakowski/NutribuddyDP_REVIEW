@@ -5,6 +5,10 @@ using System.Text.Json; // REVIEW - nieużytu using
 
 namespace NutribuddyDP.Core.Controllers
 {
+    //<REVIEW> Wzorzec fasady ma sens tylko wtedy, gdy rzeczywiście upraszcza i ujednolica dostęp
+    //do skomplikowanego systemu lub zestawu operacji.
+    //Jeśli fasada nie realizuje tego celu i nie wnosi dodatkowej wartości, to jej stosowanie jest niepotrzebne
+    //i może wprowadzać nadmiarową warstwę abstrakcji.
     internal class DataStorageFacade()
     {
         // REVIEW - nie powinno się trzymać takich rzeczy jak wszelakie niezmienne

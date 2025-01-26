@@ -54,6 +54,7 @@ namespace NutribuddyDP.UI.Console
 
                     case "Back to main menu":
                         _viewManager.ShowView("MainMenu");
+                        // REVIEW - nigdy nie dochodzi do return podobnie jak w wielu innych miejscach
                         return;
 
                 }
@@ -107,6 +108,7 @@ namespace NutribuddyDP.UI.Console
                 {
                     case "Back":
                         _viewManager.ShowView("MainMenu");
+                        // REVIEW - nigdy nie dochodzi do return podobnie jak w wielu innych miejscach
                         return;
                 }
             }
@@ -149,7 +151,7 @@ namespace NutribuddyDP.UI.Console
                 AnsiConsole.Write(panel);
                 AnsiConsole.WriteLine(); // Dla czytelności oddzielamy kategorie
             }
-
+            //<REVIEW> Kod się powtarza, można by go wydzielić do osobnej metody
             while (true)
             {
                 var options = new List<string>
@@ -168,6 +170,7 @@ namespace NutribuddyDP.UI.Console
                 {
                     case "Back":
                         _viewManager.ShowView("MainMenu");
+                        // REVIEW - nigdy nie dochodzi do return podobnie jak w wielu innych miejscach
                         return;
                 }
             }
