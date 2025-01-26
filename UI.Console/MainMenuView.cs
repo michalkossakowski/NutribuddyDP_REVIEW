@@ -29,6 +29,8 @@ namespace NutribuddyDP.UI.Console
             AnsiConsole.Write(new Grid()
                     .AddColumn()
                     .AddColumn()
+                    // REVIEW - można to skrócić używając fora, gdzie umiesczone by było AddRow a w miejsce wartości
+                    // menuOptions możnaby było podstawić zmienne z fora np. i oraz i+=1
                     .AddRow(
                     [
                         Align.Center(new Panel(menuOptions[0]).Padding(menuPad)),
@@ -53,6 +55,7 @@ namespace NutribuddyDP.UI.Console
                 .AddChoices(menuOptions)
                 .HighlightStyle(new Style(foreground: Color.MediumPurple)));
 
+            //REVIEW - Lepiej jeśli switch case będzie na zmiennych statycznych a nie tekstowych
             switch (selected)
             {
                 case "View my profile":
