@@ -10,6 +10,8 @@ namespace NutribuddyDP.Core.Interfaces
     internal interface IMealComponent
     {
         string Name { get; }
+        // REVIEW - Add/Remove mogło by ich nie być interfejsie bo są potrzebne tylko w 1 klasie
+        // a pozostałe muszą na siłę wyrzucać NotImplementedException
         void Add(IMealComponent component);
         void Remove(IMealComponent component);
     }

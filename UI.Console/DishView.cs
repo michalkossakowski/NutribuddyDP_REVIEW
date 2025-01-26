@@ -22,6 +22,7 @@ namespace NutribuddyDP.UI.Console
             AnsiConsole.Write(foodFigletText);
             while (true)
             {
+                // REVIEW - mainMenuOptions nigdy się nie zmiania nie musi być w while
                 // Top-level menu
                 var mainMenuOptions = new List<string>
                 {
@@ -71,6 +72,7 @@ namespace NutribuddyDP.UI.Console
                     case "Return to main menu":
                         //_navigateToMainMenu();
                         _viewManager.ShowView("MainMenu");
+                        // REVIEW - nigdy nie dochodzi do return podobnie jak w DishView i wielu innych miejscach
                         return;
                 }
             }
@@ -85,6 +87,7 @@ namespace NutribuddyDP.UI.Console
 
             while (true)
             {
+                // REVIEW - addDishOptions nigdy się nie zmiania nie musi być w while
                 // Sub-menu for adding ingredients and finalizing dish
                 var addDishOptions = new List<string>
                 {
@@ -128,7 +131,7 @@ namespace NutribuddyDP.UI.Console
         private void AddIngredientToDish(Dish newDish, string searchPhrase)
         {
             var foods = _foodController.GetAllFoods();
-
+            // REVIEW - brak nullchecka dla nullowalnej wartości
             if (foods.Count == 0)
             {
                 AnsiConsole.MarkupLine("[bold red]No food items available to add as ingredients.[/]");
@@ -183,7 +186,7 @@ namespace NutribuddyDP.UI.Console
         private string SearchForAnIngredient()
         {
             var foods = _foodController.GetAllFoods();
-
+            // REVIEW - brakuje nullchecka
             if (foods.Count == 0)
             {
                 AnsiConsole.MarkupLine("[bold red]No food items available to add as ingredients.[/]");
@@ -272,7 +275,7 @@ namespace NutribuddyDP.UI.Console
         private void ShowDishes(string searchPhrase)
         {
             var allDishes = _dishController.GetAllDishes();
-
+            // REVIEW - brak nullchecka dla nullowalnej wartości
             if (allDishes.Count == 0)
             {
                 AnsiConsole.MarkupLine("[bold red]No dishes available.[/]");
@@ -473,7 +476,7 @@ namespace NutribuddyDP.UI.Console
         private void DeleteDishMenu()
         {
             var dishes = _dishController.GetAllDishes();
-
+            // REVIEW - brak nullchecka dla nullowalnej wartości
             if (dishes.Count == 0)
             {
                 AnsiConsole.MarkupLine("[bold red]No dishes available.[/]");

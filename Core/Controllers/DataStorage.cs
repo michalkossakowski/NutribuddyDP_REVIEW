@@ -37,7 +37,7 @@ namespace NutribuddyDP.Core.Controllers
             }
             catch (Exception ex) // REVIEW - powinno się łapać konkretny exception
             {
-                // REVIEW - ponownie wypisanie w konsoli z poziomu kontrolera jest surowo ZABRONIONE
+                // REVIEW - ponownie wypisanie w konsoli z poziomu kontrolera jest surowo ZABRONIONE 
                 AnsiConsole.WriteLine($"Error loading file: {ex.Message}");
                 data = [];
             }

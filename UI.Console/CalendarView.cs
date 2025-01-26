@@ -25,6 +25,7 @@ namespace NutribuddyDP.UI.Console
             {
                 AnsiConsole.Write(calendar);
 
+                // REVIEW - powinno być poza whilem bo nigdy się nie zmienia
                 var menuOptions = new List<string>
                 {
                     "Show calories from day this month",
@@ -45,9 +46,11 @@ namespace NutribuddyDP.UI.Console
                         var selectedDay = AnsiConsole.Ask<int>(
                             $"Enter the [pink1]day[/]: ");
 
+                        // REVIEW - nie każdy miesiąc ma 31 dni
                         if (selectedDay < 1 || selectedDay > 31)
                         {
                             AnsiConsole.Write(new Markup($"[red]Invalid day[/]"));
+                            // REVIEW - czemu znika po 1 sekundzie co jak użytkownik mrugnie ?
                             Thread.Sleep(1000);
                             AnsiConsole.Clear();
                             AnsiConsole.Write(calendarFigletText);
@@ -93,7 +96,7 @@ namespace NutribuddyDP.UI.Console
                     case "Change calendar page":
                         var selectedYear = AnsiConsole.Ask<int>(
                             $"Enter the [pink1]year[/]: ");
-
+                        // REVIEW - $ nie jest potrzebny jak nie ma zmiennych łamanie zasady KISS - keep it simple stupid
                         var selectedMonth = AnsiConsole.Ask<int>(
                             $"Enter the [pink1]month[/]: ");
 
@@ -114,7 +117,10 @@ namespace NutribuddyDP.UI.Console
 
                     case "Return to main menu":
                         //_navigateToMainMenu();
+                        // REVIEW - odpala nowy widok z main menu które odpala kolejny widok i tak dalej ...
                         _viewManager.ShowView("MainMenu");
+                        // REVIEW - do returna nigdy nie dojdzie, problem jest w każdym widoku
+                        // powinno zakończyć działanie tego widoku i wtedy uruchamaiać następny
                         return;
 
                     default:

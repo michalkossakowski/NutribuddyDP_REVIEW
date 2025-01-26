@@ -15,6 +15,7 @@ namespace NutribuddyDP
             var dishController = new DishController();
             var eatHistoryController = new EatHistoryController();
             var mealController = new MealController();
+            // REVIEW + SUPER!!!! widok manager bardzo wygodne do użytku
             var viewManager = new ViewManager();
             viewManager.RegisterView("IntroSequence", new IntroSequenceView(viewManager));
             viewManager.RegisterView("MainMenu", new MainMenuView(viewManager));

@@ -2,6 +2,7 @@
 {
     internal class ViewManager
     {
+        // REVIEW + fajny słownik na różne widoki
         private readonly Dictionary<string, IView> _views = [];
 
         public void RegisterView(string name, IView view)

@@ -31,6 +31,9 @@ namespace NutribuddyDP.Core.Controllers
         {
             if (_instance == null)
             {
+                // REVIEW - lock - ciekawy sposób na zabezpieczenie przed problemami wielowątkowością
+                // problem jest taki że w całej aplikacji nie ma ani jednego async/await ani Task.Run
+                // więc nie ma potrzeby na takie zabezpieczenie bo nic nie dzieje się asynchronicznie
                 lock (_instanceLock)
                 {
                     _instance ??= new DataStorageFacade();
@@ -91,6 +94,7 @@ namespace NutribuddyDP.Core.Controllers
         {
             var DataFood = DataStorage.ImportData<(DateTime, FoodItem)>(_filePathFoodHistory);
             var DataDish = DataStorage.ImportData<(DateTime, Dish)>(_filePathDishHistory);
+            // REVIEW - przydałby się null check na te dane
             EatHistory eatHistory = new(DataDish!, DataFood!);
             return eatHistory;
         }

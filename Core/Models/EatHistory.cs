@@ -5,6 +5,7 @@
         public List<(DateTime, Dish)> DishEatHistory { get; set; }
         public List<(DateTime, FoodItem)> FoodItemEatHistory { get; set; }
 
+        // REVIEW - 0 references czy napewno jest potrzebny?
         public EatHistory()
         {
             DishEatHistory = [];

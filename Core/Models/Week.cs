@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace NutribuddyDP.Core.Models
 {
+    // REVIEW - Week implementuje IMealComponent - nazewnictwo jest katastrofalne nie wiadomo o co chodzi
     internal class Week : PlanItem, IMealComponent
     {
         [JsonProperty]

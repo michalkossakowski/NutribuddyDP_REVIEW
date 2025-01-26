@@ -5,9 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+// REVIEW - dużo nieużytych usingów
 
 namespace NutribuddyDP.Core.Models
 {
+    // REVIEW - Day implementuje IMealComponent - nazewnictwo jest katastrofalne nie wiadomo o co chodzi
     internal class Day : PlanItem, IMealComponent
     {
         [JsonProperty]
