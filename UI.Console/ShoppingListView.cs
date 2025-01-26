@@ -41,7 +41,10 @@ namespace NutribuddyDP.UI.Console
                         .HighlightStyle(new Style(foreground: Color.MediumPurple))
                 );
                 
-                //REVIEW - jeśli mamy pustą listę to program wychodzi z wihle'a bez określenia czy zostajemy w ekranie czy idziemy do MainMenu przez returna. Można by było dać breaka, aby program został w while'u i pokazywał komunikat wywołany z DisplayAlphabetical bądź DisplayCategorical i został w widoku
+                //REVIEW - jeśli mamy pustą listę to program wychodzi z wihle'a
+                //bez określenia czy zostajemy w ekranie czy idziemy do MainMenu przez returna.
+                //Można by było dać breaka, aby program został w while'u i pokazywał komunikat wywołany z DisplayAlphabetical
+                //bądź DisplayCategorical i został w widoku
                 switch (choice)
                 {
                     case "Generate list alphabetically":

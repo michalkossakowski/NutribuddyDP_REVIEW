@@ -19,7 +19,7 @@ namespace NutribuddyDP.Core.Controllers
             _strategy = strategy;
         }
 
-        // <REVIEW> Brak obsługi wyjątków
+        // <REVIEW> Brak obsługi wyjątków, które wyrzuca ta metoda
         public Dictionary<string, object> GenerateList()
         {
            if (_strategy == null)
